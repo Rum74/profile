@@ -2,6 +2,57 @@
     --box-shadow: 0 0 5px rgb(170, 170, 170);
 }
 
+:root{
+    --background: white;
+    --color: rgb(126, 126, 126);
+}
+:root{
+    --background-dark: black;
+    --color: rgb(126, 126, 126);
+}
+
+.app.dark-theme{
+    background-color: var(--background-dark);
+}
+
+p.dark-theme{
+    color: white;
+}
+
+.back:hover.dark-theme{
+    box-shadow: none;
+}
+
+#dark:hover.dark-theme{
+    box-shadow: none;
+}
+
+.card-fb:hover.dark-theme{
+    box-shadow: none;
+}
+
+.card-ins:hover.dark-theme{
+    box-shadow: none;
+}
+
+.card-ytb:hover.dark-theme{
+    box-shadow: none;
+}
+
+.card-bh:hover.dark-theme{
+    box-shadow: none;
+}
+
+.nt:hover.dark-theme{
+    box-shadow: none;
+    background-color: var(--background-dark);
+}
+
+.td:hover.dark-theme{
+    box-shadow: none;
+    background-color: var(--background-dark);
+}
+
 body{
     display: flex;
     justify-content: center;
@@ -10,8 +61,8 @@ body{
 
 .app{
     width: 300px;
-    height: 380px;
-    background-color: white;
+    height: 360px;
+    background-color: var(--background);
     display: flex;
     justify-content: center;
     border-radius: 10px;
@@ -41,7 +92,7 @@ body{
 }
 
 .back i{
-    color: rgb(126, 126, 126);
+    color: var(--color);
     display: flex;
     justify-content: center;
     line-height: 25px;
@@ -78,7 +129,7 @@ input[type="checkbox"]:checked{
     inset 10px 10px 15px rgba(70, 70, 70, 0.12);
 } */
 
-.dark{
+#dark{
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -88,16 +139,16 @@ input[type="checkbox"]:checked{
     align-items: center;
 }
 
-.dark:hover{
+/* #dark:hover{
     box-shadow: 
     -10px -10px 15px rgba(255, 255, 255, 0.5),
     10px 10px 15px rgba(70, 70, 70, 0.12),
     inset -10px -10px 15px rgba(255, 255, 255, 0.5),
     inset 10px 10px 15px rgba(70, 70, 70, 0.12);
-}
+} */
 
-.dark i{
-    color: rgb(126, 126, 126);
+#dark i{
+    color: var(--color);
     display: flex;
     justify-content: center;
     cursor: pointer;
@@ -152,7 +203,7 @@ p{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     margin-top: -10px;
-    color: rgb(126, 126, 126);
+    color: var(--color);
 }
 
 .nav{
@@ -279,11 +330,11 @@ p{
 .nav-1 .nt:hover{
     color: salmon;
     cursor: pointer;
-    box-shadow: 
+    /* box-shadow: 
     -10px -10px 15px rgba(255, 255, 255, 0.5),
     10px 10px 15px rgba(70, 70, 70, 0.12),
     inset -10px -10px 15px rgba(255, 255, 255, 0.5),
-    inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+    inset 10px 10px 15px rgba(70, 70, 70, 0.12); */
 }
 
 .nav-1 .td{
@@ -302,18 +353,18 @@ p{
 .nav-1 .td:hover{
     color: salmon;
     cursor: pointer;
-    box-shadow: 
+    /* box-shadow: 
     -10px -10px 15px rgba(255, 255, 255, 0.5),
     10px 10px 15px rgba(70, 70, 70, 0.12),
     inset -10px -10px 15px rgba(255, 255, 255, 0.5),
-    inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+    inset 10px 10px 15px rgba(70, 70, 70, 0.12); */
 }
 
 .like-cmt-share{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    color: rgb(126, 126, 126);
+    color: var(--color);
 }
 
 .tim{
@@ -345,7 +396,7 @@ p{
     display: flex;
     justify-content: center;
     margin-top: 15px;
-    color: rgb(126, 126, 126);
+    color: var(--color);
 }
 
 .footer i{
